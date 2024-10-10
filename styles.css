@@ -1,0 +1,124 @@
+/* Animasi latar belakang */
+@keyframes backgroundAnimation {
+    0% { background-color: #ff758c; }
+    50% { background-color: #ff7eb3; }
+    100% { background-color: #ff758c; }
+}
+
+/* Gaya untuk body dan container */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    animation: backgroundAnimation 10s ease infinite;
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Memastikan halaman penuh tinggi */
+}
+
+.container {
+    max-width: 600px;
+    width: 90%; /* Responsif untuk layar kecil */
+    margin: 20px; /* Margin untuk menghindari potongan */
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    letter-spacing: 2px; /* Jarak antar huruf */
+    text-transform: uppercase; /* Mengubah teks menjadi kapital */
+}
+
+.question {
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.question p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold; /* Menebalkan teks */
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    cursor: pointer; /* Menunjukkan elemen dapat diklik */
+}
+
+label:hover {
+    color: #ffeb3b;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #ffeb3b;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff7eb3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    font-weight: bold; /* Menebalkan teks tombol */
+}
+
+button:hover {
+    background-color: #ff758c;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Ukuran font lebih kecil di layar kecil */
+    }
+
+    .question p {
+        font-size: 1.1em; /* Ukuran font pertanyaan lebih kecil di layar kecil */
+    }
+
+    button {
+        font-size: 1em; /* Ukuran font tombol lebih kecil di layar kecil */
+    }
+
+    .result {
+        font-size: 1.2em; /* Ukuran font hasil lebih kecil di layar kecil */
+    }
+}

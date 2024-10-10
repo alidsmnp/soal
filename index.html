@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Soal Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Apa itu HTML?</p>
+                <label><input type="radio" name="q1" value="a"> a) Baju yang dipakai saat coding</label><br>
+                <label><input type="radio" name="q1" value="b"> b) Makanan kesukaan para programmer</label><br>
+                <label><input type="radio" name="q1" value="c"> c) Bahasa yang digunakan untuk membuat halaman web</label>
+            </div>
+
+            <div class="question">
+                <p>2. Apa yang terjadi jika kamu lupa menulis &lt;!DOCTYPE html&gt;?</p>
+                <label><input type="radio" name="q2" value="a"> a) Browser akan bingung dan tanya, "Ini apaan, ya?"</label><br>
+                <label><input type="radio" name="q2" value="b"> b) Website kamu akan jadi rumah hantu</label><br>
+                <label><input type="radio" name="q2" value="c"> c) Gambar kamu akan hilang</label>
+            </div>
+
+            <div class="question">
+                <p>3. Jika kamu mau membuat daftar belanjaan, tag HTML mana yang kamu gunakan?</p>
+                <label><input type="radio" name="q3" value="a"> a) &lt;ul&gt;</label><br>
+                <label><input type="radio" name="q3" value="b"> b) &lt;p&gt;</label><br>
+                <label><input type="radio" name="q3" value="c"> c) &lt;img&gt;</label>
+            </div>
+
+            <div class="question">
+                <p>4. Kenapa gambar itu penting di website?</p>
+                <label><input type="radio" name="q4" value="a"> a) Supaya halaman jadi lebih menarik, kayak bumbu masakan</label><br>
+                <label><input type="radio" name="q4" value="b"> b) Biar orang-orang bingung</label><br>
+                <label><input type="radio" name="q4" value="c"> c) Supaya bisa menghilangkan kata-kata</label>
+            </div>
+
+            <div class="question">
+                <p>5. Buatlah tautan ke website favoritmu!</p>
+                <label for="link">Tautan: </label>
+                <input type="text" id="link" placeholder="Masukkan alamat tautan">
+            </div>
+
+            <button type="button" id="submit-btn">Kirim</button>
+            <button type="button" id="next-btn" style="display: none;">Lanjut ke Halaman Berikutnya</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
